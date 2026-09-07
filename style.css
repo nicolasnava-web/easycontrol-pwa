@@ -6,23 +6,24 @@
 
 :root {
 
-    --background: #0f172a;
-    --surface: #1e293b;
-    --surface-light: #334155;
+    --background: #F6E8D5;
+    --surface: #6B3E2E;
+    --surface-light: #8B4E35;
 
-    --primary: #38bdf8;
-    --secondary: #818cf8;
+    --primary: #E86A2A;
+    --secondary: #F2A23A;
 
-    --text: #f8fafc;
-    --muted: #94a3b8;
+    --text: #FFF8F0;
+    --muted: #D8BFAE;
 
-    --success: #22c55e;
-    --danger: #ef4444;
+    --success: #5E9C61;
+    --danger: #C94C4C;
 }
 
 body {
 
     font-family:
+        'Inter',
         Arial,
         Helvetica,
         sans-serif;
@@ -30,19 +31,16 @@ body {
     background:
         linear-gradient(
             160deg,
-            #0f172a,
-            #111827
+            #F6E8D5,
+            #EFD1B2
         );
 
-    color: var(--text);
+    color: #3E241C;
 
     min-height: 100vh;
 
     padding-bottom: 90px;
 }
-
-
-/* HEADER */
 
 .topbar {
 
@@ -57,7 +55,7 @@ body {
     padding: 25px;
 
     background:
-        rgba(15, 23, 42, .8);
+        rgba(107, 62, 46, .95);
 
     backdrop-filter:
         blur(10px);
@@ -81,6 +79,12 @@ body {
 }
 
 .topbar h1 {
+
+    font-family:
+        'Poppins',
+        Arial,
+        Helvetica,
+        sans-serif;
 
     font-size: 26px;
 
@@ -109,9 +113,6 @@ body {
     justify-content: center;
 }
 
-
-/* CONTEÚDO */
-
 main {
 
     max-width: 1100px;
@@ -121,27 +122,14 @@ main {
     padding: 25px;
 }
 
-
-/* CARDS */
-
-.cards {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 15px;
-}
-
 .card {
 
     background:
-        rgba(30, 41, 59, .85);
+        rgba(107, 62, 46, .92);
 
     border:
         1px solid
-        rgba(255,255,255,.05);
+        rgba(255,255,255,.08);
 
     padding: 20px;
 
@@ -171,13 +159,16 @@ main {
 
 .card h2 {
 
+    font-family:
+        'Poppins',
+        Arial,
+        Helvetica,
+        sans-serif;
+
     margin-top: 6px;
 
     font-size: 22px;
 }
-
-
-/* SEÇÕES */
 
 .section {
 
@@ -196,6 +187,12 @@ main {
 
 .section-title h2 {
 
+    font-family:
+        'Poppins',
+        Arial,
+        Helvetica,
+        sans-serif;
+
     margin-top: 5px;
 }
 
@@ -209,9 +206,6 @@ main {
 
     font-weight: bold;
 }
-
-
-/* BOTÕES */
 
 .actions {
 
@@ -232,7 +226,7 @@ main {
     padding: 18px;
 
     background:
-        var(--surface);
+        var(--primary);
 
     color: white;
 
@@ -252,9 +246,6 @@ main {
     transform:
         translateY(-2px);
 }
-
-
-/* GRÁFICO */
 
 .chart {
 
@@ -306,7 +297,7 @@ main {
         space-around;
 
     color:
-        var(--muted);
+        #8B6758;
 
     font-size:
         12px;
@@ -314,9 +305,6 @@ main {
     margin-top:
         8px;
 }
-
-
-/* ALERTA */
 
 .alert {
 
@@ -330,11 +318,11 @@ main {
         16px;
 
     background:
-        rgba(239,68,68,.12);
+        rgba(201,76,76,.12);
 
     border:
         1px solid
-        rgba(239,68,68,.25);
+        rgba(201,76,76,.25);
 
     display:
         flex;
@@ -349,14 +337,11 @@ main {
 .alert p {
 
     color:
-        var(--muted);
+        #8B6758;
 
     margin-top:
         4px;
 }
-
-
-/* MENU */
 
 .bottom-nav {
 
@@ -373,7 +358,7 @@ main {
         100%;
 
     background:
-        rgba(15,23,42,.95);
+        rgba(107,62,46,.98);
 
     backdrop-filter:
         blur(15px);
@@ -389,7 +374,7 @@ main {
 
     border-top:
         1px solid
-        rgba(255,255,255,.08);
+        rgba(255,255,255,.12);
 
     z-index:
         20;
@@ -428,9 +413,6 @@ main {
         11px;
 }
 
-
-/* TOAST */
-
 .toast {
 
     position:
@@ -446,10 +428,10 @@ main {
         translateX(-50%);
 
     background:
-        #f8fafc;
+        #FFF8F0;
 
     color:
-        #0f172a;
+        #3E241C;
 
     padding:
         12px 20px;
@@ -475,9 +457,6 @@ main {
     opacity:
         1;
 }
-
-
-/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 

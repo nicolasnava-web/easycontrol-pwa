@@ -1,278 +1,276 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
 
-<head>
+<head> 
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8"> 
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" 
+> 
 
-    <meta
-        name="theme-color"
-        content="#111827"
-    >
+<meta 
+    name="theme-color" 
+    content="#6B3E2E" 
+> 
 
-    <meta
-        name="description"
-        content="Dashboard para controle de pequenos negócios"
-    >
+<meta 
+    name="description" 
+    content="Dashboard para acompanhar seus treinos em casa" 
+> 
 
-    <link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json"> 
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"> 
 
-    <title>EasyControl</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
 
-</head>
+<title>MyGym</title> 
+```
 
-<body>
+</head> 
 
-    <header class="topbar">
+<body> 
 
-        <div>
-            <span class="small-title">
-                EASYCONTROL
-            </span>
+```
+<header class="topbar"> 
 
-            <h1>Dashboard</h1>
-        </div>
+    <div> 
+        <span class="small-title"> 
+            MYGYM 
+        </span> 
 
-        <div class="avatar">
-            👤
-        </div>
+        <h1>Treino em Casa</h1> 
+    </div> 
 
-    </header>
+    <div class="avatar"> 
+        🏋️ 
+    </div> 
 
+</header> 
 
-    <main>
 
-        <!-- RESUMO -->
+<main> 
 
-        <section class="cards">
+    <section class="cards"> 
 
-            <article class="card">
+        <article class="card"> 
 
-                <span>💰</span>
+            <span>🔥</span> 
 
-                <p>Vendas</p>
+            <p>Treinos</p> 
 
-                <h2 id="vendas">
-                    R$ 8.450
-                </h2>
+            <h2 id="vendas"> 
+                12 
+            </h2> 
 
-            </article>
+        </article> 
 
 
-            <article class="card">
+        <article class="card"> 
 
-                <span>🛒</span>
+            <span>⏱️</span> 
 
-                <p>Pedidos</p>
+            <p>Minutos</p> 
 
-                <h2 id="pedidos">
-                    126
-                </h2>
+            <h2 id="pedidos"> 
+                340 
+            </h2> 
 
-            </article>
+        </article> 
 
 
-            <article class="card">
+        <article class="card"> 
 
-                <span>👥</span>
+            <span>💪</span> 
 
-                <p>Clientes</p>
+            <p>Exercícios</p> 
 
-                <h2 id="clientes">
-                    84
-                </h2>
+            <h2 id="clientes"> 
+                48 
+            </h2> 
 
-            </article>
+        </article> 
 
 
-            <article class="card">
+        <article class="card"> 
 
-                <span>📦</span>
+            <span>🎯</span> 
 
-                <p>Produtos</p>
+            <p>Metas</p> 
 
-                <h2 id="produtos">
-                    238
-                </h2>
+            <h2 id="produtos"> 
+                7 
+            </h2> 
 
-            </article>
+        </article> 
 
-        </section>
+    </section> 
 
 
-        <!-- AÇÕES -->
+    <section class="section"> 
 
-        <section class="section">
+        <div class="section-title"> 
 
-            <div class="section-title">
+            <div> 
 
-                <div>
+                <span class="tag"> 
+                    ATALHOS 
+                </span> 
 
-                    <span class="tag">
-                        ATALHOS
-                    </span>
+                <h2> 
+                    Ações rápidas 
+                </h2> 
 
-                    <h2>
-                        Ações rápidas
-                    </h2>
+            </div> 
 
-                </div>
+        </div> 
 
-            </div>
 
+        <div class="actions"> 
 
-            <div class="actions">
+            <button onclick="mostrarMensagem('Treino')"> 
+                🏋️ Treino 
+            </button> 
 
-                <button onclick="mostrarMensagem('Produto')">
-                    ➕ Produto
-                </button>
+            <button onclick="mostrarMensagem('Exercício')"> 
+                ➕ Exercício 
+            </button> 
 
-                <button onclick="mostrarMensagem('Venda')">
-                    💰 Venda
-                </button>
+            <button onclick="mostrarMensagem('Meta')"> 
+                🎯 Meta 
+            </button> 
 
-                <button onclick="mostrarMensagem('Cliente')">
-                    👤 Cliente
-                </button>
+        </div> 
 
-            </div>
+    </section> 
 
-        </section>
 
+    <section class="section"> 
 
-        <!-- GRÁFICO -->
+        <div class="section-title"> 
 
-        <section class="section">
+            <div> 
 
-            <div class="section-title">
+                <span class="tag"> 
+                    PROGRESSO 
+                </span> 
 
-                <div>
+                <h2> 
+                    Minutos treinados 
+                </h2> 
 
-                    <span class="tag">
-                        ANÁLISE
-                    </span>
+            </div> 
 
-                    <h2>
-                        Vendas
-                    </h2>
+        </div> 
 
-                </div>
 
-            </div>
+        <div class="chart"> 
 
+            <div 
+                class="bar" 
+                style="height: 45%" 
+            ></div> 
 
-            <div class="chart">
+            <div 
+                class="bar" 
+                style="height: 65%" 
+            ></div> 
 
-                <div
-                    class="bar"
-                    style="height: 45%"
-                ></div>
+            <div 
+                class="bar" 
+                style="height: 55%" 
+            ></div> 
 
-                <div
-                    class="bar"
-                    style="height: 65%"
-                ></div>
+            <div 
+                class="bar" 
+                style="height: 80%" 
+            ></div> 
 
-                <div
-                    class="bar"
-                    style="height: 55%"
-                ></div>
+            <div 
+                class="bar" 
+                style="height: 70%" 
+            ></div> 
 
-                <div
-                    class="bar"
-                    style="height: 80%"
-                ></div>
+            <div 
+                class="bar" 
+                style="height: 95%" 
+            ></div> 
 
-                <div
-                    class="bar"
-                    style="height: 70%"
-                ></div>
+        </div> 
 
-                <div
-                    class="bar"
-                    style="height: 95%"
-                ></div>
+        <div class="months"> 
 
-            </div>
+            <span>Seg</span> 
+            <span>Ter</span> 
+            <span>Qua</span> 
+            <span>Qui</span> 
+            <span>Sex</span> 
+            <span>Sáb</span> 
 
-            <div class="months">
+        </div> 
 
-                <span>Jan</span>
-                <span>Fev</span>
-                <span>Mar</span>
-                <span>Abr</span>
-                <span>Mai</span>
-                <span>Jun</span>
+    </section> 
 
-            </div>
 
-        </section>
+    <section class="alert"> 
 
+        <span>💡</span> 
 
-        <!-- ALERTA -->
+        <div> 
 
-        <section class="alert">
+            <strong> 
+                Próximo treino 
+            </strong> 
 
-            <span>⚠️</span>
+            <p> 
+                Treino de pernas programado para hoje. 
+            </p> 
 
-            <div>
+        </div> 
 
-                <strong>
-                    Estoque baixo
-                </strong>
+    </section> 
 
-                <p>
-                    5 produtos precisam
-                    de reposição.
-                </p>
+</main> 
 
-            </div>
 
-        </section>
+<nav class="bottom-nav"> 
 
-    </main>
+    <button onclick="irPara('dashboard')"> 
+        🏠 
+        <span>Início</span> 
+    </button> 
 
+    <button onclick="irPara('produtos')"> 
+        🏋️ 
+        <span>Treinos</span> 
+    </button> 
 
-    <nav class="bottom-nav">
+    <button onclick="irPara('vendas')"> 
+        📊 
+        <span>Progresso</span> 
+    </button> 
 
-        <button onclick="irPara('dashboard')">
-            🏠
-            <span>Início</span>
-        </button>
+    <button onclick="irPara('perfil')"> 
+        👤 
+        <span>Perfil</span> 
+    </button> 
 
-        <button onclick="irPara('produtos')">
-            📦
-            <span>Produtos</span>
-        </button>
+</nav> 
 
-        <button onclick="irPara('vendas')">
-            💰
-            <span>Vendas</span>
-        </button>
 
-        <button onclick="irPara('perfil')">
-            👤
-            <span>Perfil</span>
-        </button>
+<div 
+    id="toast" 
+    class="toast" 
+></div> 
 
-    </nav>
 
+<script src="script.js"></script> 
+```
 
-    <div
-        id="toast"
-        class="toast"
-    ></div>
-
-
-    <script src="script.js"></script>
-
-</body>
+</body> 
 
 </html>
